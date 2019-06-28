@@ -1,0 +1,159 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url('find2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    padding-top: 100px;
+    width: 1200px;
+    margin: auto;
+}
+/*header*/
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    top: 0;
+    background: rgb(67, 152, 185);
+    height: 55px;
+}
+
+#sub-header {
+    width: 1200px;
+    margin: auto;
+}
+
+nav {
+    text-align: left;
+    line-height: 55px;
+}
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+        display: inline;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+#header_logo {
+    float: left;
+    border-radius: 50%;
+    border: 1px solid blue;
+    height: 50px;
+    margin-right: 20px;
+}
+/*body*/
+
+#desc {
+   height: 150px;
+    margin-top: 30px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: "Roboto Slab",Museo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+#how {
+    margin: 50px 0px 8px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    text-align: left;
+    float:left;
+}
+
+.desc_how {
+    height: 170px;
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+.opt_desc {
+    margin: 0px 8px;
+    padding: 5px;
+    width: 12%;
+    height: 300px;
+    font-family: "Roboto Slab",Museo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.25rem;
+    float: left;
+    background-color: rgba(255,255,255,0.8);
+    visibility: hidden;
+}
+
+
+#up, #down {
+    margin: 5px 63px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    background-color: #b3b3ff;
+    cursor: pointer;
+}
+
+#play, #pause, #reset {
+    margin: 8px 55px;
+    padding: 5px 15px;
+    width: 70px;
+    float: left;
+    background-color: #b3b3ff;
+    cursor: pointer;
+}
+
+#speedDown, #speedUp {
+    margin: 5px 60px;
+    font-size: 20px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    float: left;
+    cursor: pointer;
+    background-color: #b3b3ff;
+}
+
+
+
+
+
+
+/*footer*/
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    background: rgb(67, 152, 185);
+    height: 40px;
+    width: 100%;
+}
+
+#sub-footer {
+    width: 1200px;
+    margin: auto;
+    line-height: 40px;
+}
+
+#footer-social {
+    text-align: right;
+}
+
+#para {
+    display: inline;
+    float: left;
+}
+
+.foot {
+    margin-left: 10px;
+    border-radius: 80%;
+    padding-top: 5px;
+}

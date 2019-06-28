@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="game.css">
+    <script src="game.js"></script>
+</head>
+
+<body>
+
+
+    <!-- header -->
+
+    <div class="fixed-header">
+        <div id="sub-header">
+            <nav>
+                <a id="fir" href="../home/home.html">Home</a>
+                <a href="../AboutUs/AboutUs.html">About us</a>
+                <a href="../HowToPlay/HowToPlay.html">How to play</a>
+                <a href="../game/game.html">Start play</a>
+                <img id="header_logo" src="header_logo.png" />
+            </nav>
+
+        </div>
+    </div>
+    
+    <div id='game'>
+        <div id='frame'>
+            <img src="nemo.png" id='paddle'></img>
+            <div id='ball'></div>
+        </div>
+        <p id='title'>Ping Pong</p>
+        <div id='controls'>
+            <button id='play' class='button'>Play</button>
+            <button id='pause' class='button'>Pause</button>
+            <button id='reset' class='button'>Reset</button>
+            <div id='subControls'>
+                <div id='speed'>
+                    <p class='subTitle'>Ball Speed</p>
+                    <button id='speedDown' class='arrow'>▼</button>
+                    <span id='speedDisplay' class='detail'>1</span>
+                    <button id='speedUp' class='arrow'>▲</button>
+                </div>
+                <div id='sensitivity'>
+                    <p class='subTitle'>Keyboard Sensitivity</p>
+                    <button id='sensitivityDown' class='arrow'>▼</button>
+                    <span id='sensitivityDisplay' class='detail'>Normal</span>
+                    <button id='sensitivityUp' class='arrow'>▲</button>
+                </div>
+
+                <div id="vollycount">
+                    <p class='subTitle'>Volley Count</p>
+                    <p id='hitsDisplay'>0</p>
+                    <p id='gameOverDisplay'></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='midLine'></div>
+
+
+    <audio id="audio" autoplay loop  controls>
+            <source src="myaudio.mp3">
+      </audio>
+
+    
+
+    <!--Footer -->
+
+
+
+    <div class="fixed-footer">
+        <div id="sub-footer">
+            <p id="para">Copyright &copy; MDY sharks All Rigths reserved</p>
+            <div id="footer-social">
+                <img id="ff" class="foot" src="facebook.png" title="instagram" alt="instagram" />
+                <img class="foot" src="twitter.png" title="twitter" alt="twitter" />
+                <img class="foot" src="instagram.png" title="facebook" alt="facebook" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

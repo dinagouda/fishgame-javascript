@@ -1,0 +1,249 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+:root {
+    --paddle-top: 220px;
+    --ball-top: 200px;
+    --ball-left: 40px;
+    --table-bg:rgb(28, 136, 179);
+  }
+  
+  #game {
+    display: grid;
+    grid-template-columns: 520px auto;
+  }
+  
+#sensitivityDisplay {
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+}
+  
+  #frame {
+    height: 500px;
+    width: 1000px;
+    border: 5px solid #FFFFFF;
+    outline: 1px solid;
+    overflow: hidden;
+    background-color: var(--table-bg);
+    margin-left: 340px;
+    margin-top: 100px;
+  }
+  
+  #paddle {
+    height: 115px;
+    width: 35px;
+    border: 1px solid;
+    position: relative;
+    left: 5px;
+    top: calc(var(--paddle-top) - 45px);
+   
+    z-index: 2;
+  }
+  
+  #ball {
+    height: 25px;
+    width: 25px;
+    border: 1px solid;
+    border-radius: 50%;
+    position: relative;
+    top: calc(var(--ball-top) - 80px - 10px - 5px);
+    left: var(--ball-left);
+    background:rgb(25, 63, 80);
+    z-index: 2;
+  }
+  
+  #speed {
+    margin-top: 10px;
+    padding-left: 65px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+
+  
+  #midLine {
+    position: absolute;
+    left: 13px;
+    top: 400px;
+    height: 5px;
+    width: 1000px;
+    background-color: #FFFFFF;
+    z-index: 1;
+    margin-left: 335px;
+  }
+  
+  #title {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 170px;
+
+  }
+
+  
+  #play {
+    margin-left: 0px;
+  }
+  .button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    background: #f8f8f8;
+    color: rgb(18, 54, 68);
+  }
+  
+  .subTitle {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+
+ 
+  .arrow {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 5px;
+  }
+  
+  .detail {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  #hitsDisplay {
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 75px;
+    text-align: center;
+  }
+  
+  #gameOverDisplay {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--table-bg);
+  }
+  body{        
+    padding-top: 60px;
+    padding-bottom: 40px;
+    /* background: rgb(178, 228, 247); */
+    background-image: url('find2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#controls{
+margin-top: -450px;
+margin-left: 30px;
+width: 250px;
+background-color: rgba(255,255,255,0.7);
+height: 350px;
+padding-left: 30px;
+padding-top: 20px;
+  
+}
+
+#sensitivity{
+  margin-left: 30px;
+  padding-top: 10px;
+}
+#vollycount{
+  margin-left: 60px;
+  padding-top: 15px;
+}
+
+#sensitivityDown
+{
+  margin-left: 15px;
+}
+#audio{
+  margin-left: 690px;
+  margin-top: 9px;
+}
+/*footer*/
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  background: rgb(67, 152, 185);
+  height: 40px;
+  width: 100%;
+}
+
+#sub-footer {
+  width: 1200px;
+  margin: auto;
+  line-height: 40px;
+}
+
+#footer-social {
+  text-align: right;
+}
+
+#para {
+  display: inline;
+  float: left;
+}
+
+.foot {
+  margin-left: 10px;
+  border-radius: 80%;
+  padding-top: 5px;
+}
+
+
+
+  /*header*/
+  .fixed-header {
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    top: 0;
+    background: rgb(67, 152, 185);
+    height: 55px;
+}
+
+#sub-header {
+    width: 1200px;
+    margin: auto;
+}
+
+nav {
+    text-align: left;
+    line-height: 55px;
+}
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+        display: inline;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+#header_logo {
+    float: left;
+    border-radius: 50%;
+    border: 1px solid blue;
+    height: 50px;
+    margin-right: 20px;
+}

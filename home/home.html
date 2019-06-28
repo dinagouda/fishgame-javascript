@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="home.css">
+
+</head>
+
+<body>
+    <!-- header -->
+
+    <div class="fixed-header">
+        <div id="sub-header">
+            <nav>
+                <a id="fir" href="home.html">Home</a>
+                <a href="../AboutUs/AboutUs.html">About us</a>
+                <a href="../HowToPlay/HowToPlay.html">How to play</a>
+                <a href="../game/game.html">Start play</a>
+                <img id="header_logo" src="header_logo.png" />
+            </nav>
+
+        </div>
+    </div>
+    <!-- slide show -->
+
+
+
+    <div id="slideshow">
+           
+        <img class="mySlides" src="slid1.png" style="width:50%">
+        <img class="mySlides" src="slid2.png" style="width:50%">
+        <img class="mySlides" src="slid3.png" style="width:50%">
+        <img class="mySlides" src="slid4.png" style="width:50%">
+        <img class="mySlides" src="slid5.png" style="width:50%">
+        
+        <video class="mySlides" style="width:50%" controls loop autoplay>
+                <source src="video.mp4" />
+            </video> 
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+
+
+    <!--Footer -->
+
+
+
+    <div class="fixed-footer">
+        <div id="sub-footer">
+            <p id="para">Copyright &copy; MDY sharks All Rigths reserved</p>
+            <div id="footer-social">
+                <img id="ff" class="foot" src="facebook.png" title="instagram" alt="instagram" />
+                <img class="foot" src="twitter.png" title="twitter" alt="twitter" />
+                <img class="foot" src="instagram.png" title="facebook" alt="facebook" />
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
